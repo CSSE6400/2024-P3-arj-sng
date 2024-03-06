@@ -10,4 +10,5 @@ RUN poetry install --no-root
 
 COPY todo todo
 
-CMD ["poetry", "run", "flask", "--app", "todo", "run", "--host", "0.0.0.0", "--port", "6400"]
+CMD ["bash", "-c", "sleep 10 && poetry run flask --app todo run --host 0.0.0.0 --port 6400"]
+ 

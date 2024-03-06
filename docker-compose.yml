@@ -7,7 +7,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=verySecretPassword
       - POSTGRES_USER=administrator
-      - POSTRGES_DB=todo
+      - POSTGRES_DB=todo
     volumes:
       - ./data/db:/var/lib/postrgesql/data
 
