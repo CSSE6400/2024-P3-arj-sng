@@ -1,6 +1,4 @@
-FROM ubuntu:22.04
-
-RUN apt-get update && apt-get install -y python3 python3-pip postgresql-client libpq-dev
+FROM python:3.10
 
 RUN pip3 install poetry
 
